@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<div class="g-recaptcha" data-sitekey="6Le-_isUAAAAAPfsYgEMwL1sFfWL0SNBxlhgxlXU"></div>
+<div id='multiplicationtable'></div>
+<script type="text/javascript">
+function printMultiplicationTable(num, stop)
+{
+	var number = parseInt(num);
+	var stopNumber = parseInt(stop);
+
+    alert(window.location.host);
+
+	$('#multiplicationtable').empty();
+	for (var index = 1; index <= stopNumber; index++) {
+		$('#multiplicationtable').append(number + ' x ' + index + " = " + number * index + '<br/>');
+	}
+}
+</script>
+</body>
+</html>
